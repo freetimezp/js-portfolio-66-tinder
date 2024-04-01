@@ -14,11 +14,12 @@
 
 <body>
     <div class="w-full h-screen bg-black font-['Gilroy']">
-        <div class="imagecontainer w-full h-screen relative">
-            <div class="maincard z-[3] w-full absolute h-screen">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <div class="maincard z-[3] w-[110%] absolute h-[110%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                 <img src="" alt="maincard" class="w-full h-full object-cover">
             </div>
-            <div class="incomingcard z-[2] w-full absolute h-screen">
+            <div
+                class="incomingcard z-[2] w-[110%] absolute h-[110%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                 <img src="" alt="incomingcard" class="w-full h-full object-cover">
             </div>
         </div>
@@ -40,29 +41,29 @@
 
             <div class="detailscontainer w-full">
                 <div class="details w-full p-5">
-                    <div class="location flex shadow-md items-center gap-3">
+                    <div class="location flex shadow-md items-center gap-3 element">
                         <i class="ri-corner-left-up-line font-semobild flex items-center justify-center 
                             w-[2rem] h-[2rem] bg-white rounded-full"></i>
                         <h3 class="text-white"></h3>
                     </div>
 
-                    <div class="flex text-white gap-5 mt-1">
-                        <h1 class="text-7xl font-regular tracking-tighter name"></h1>
+                    <div class="name flex text-white gap-5 mt-1 element ">
+                        <h1 class="text-7xl font-regular tracking-tighter"></h1>
                         <h2 class="opacity-40 text-7xl age"></h2>
                     </div>
 
-                    <div class="tags flex gap-5 text-white mt-4"></div>
+                    <div class="tags flex gap-5 text-white mt-4 element"></div>
 
-                    <div class="bio text-white/80 mt-5">
+                    <div class="bio text-white/80 mt-5 element">
                         <h3 class="text-xl">Bio</h3>
                         <p class="text-md mt-3"></p>
                     </div>
 
-                    <div class="flex items-start mt-10 gap-1">
-                        <button class="py-3 w-1/2 bg-white rounded-sm font-semibold">
+                    <div class="flex items-start mt-10 gap-1 element">
+                        <button class="py-3 w-1/2 bg-white rounded-sm font-semibold deny">
                             <i class="ri-close-line text-3xl"></i>
                         </button>
-                        <button class="py-3 w-1/2 bg-[#fc5149] rounded-sm font-semibold">
+                        <button class="py-3 w-1/2 bg-[#fc5149] rounded-sm font-semibold accept">
                             <i class="ri-heart-2-fill text-3xl text-white"></i>
                         </button>
                     </div>
